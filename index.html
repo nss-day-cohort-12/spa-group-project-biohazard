@@ -7,12 +7,23 @@
 	<link rel="stylesheet" href="messageboard.css">
 </head>
 <body>
+
+	<div id="navBar">
+		<form class="navbar-form navbar-left" role="search">
+		  <div class="form-group">
+		    <input type="text" class="form-control" placeholder="Search">
+		  </div>
+		  <button type="button" class="btn btn-default">Clear Message Board</button>
+		</form>
+	</div>
+
+
 	<div id="outer-container">
 		<h2>Message:</h2>
 		<div id="inner-container"></div>
 	</div>
+	<script src="//code.jquery.com/jquery-1.12.0.min.js"></script>	
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 	<script src="Javascript/messageboard.js"></script>
 	<script src="Javascript/augmbfunctions.js"></script>
 	<script src="Javascript/augeventlisteners.js"></script>

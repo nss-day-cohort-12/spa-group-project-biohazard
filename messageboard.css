@@ -1,0 +1,33 @@
+body {
+	background-color: white;
+}
+
+
+
+#navBar {
+	display: inline-block;
+	background-color: blue;
+	width: 100%;
+	border: 1px solid blue;
+	height: 100px;
+}
+
+#outer-container {
+	border: 1px dashed green;
+	width: 90%;
+	margin: 0 auto;
+}
+
+#inner-container {
+	width: 90%;
+	border: 1px solid red;
+	margin: 0 auto;
+	height: 500px;
+}
+
+h2 {
+	margin-left: 5%;
+}
+
+
+
