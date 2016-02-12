@@ -1,0 +1,25 @@
+{
+	"chats":
+	[
+		{
+		"user": "william",
+		"text": "Hello, how are you?"
+		},
+		{
+		"user": "blair",
+		"text": "Hello, how are you today?"
+		},
+		{
+		"user": "brian",
+		"text": "No, pizza?"
+		},
+		{
+		"user": "matt",
+		"text": "Where is the beer?"
+		},
+		{
+		"user": "chattyBot",
+		"text": "That was a wierd conversation?"
+		}
+	]
+}
