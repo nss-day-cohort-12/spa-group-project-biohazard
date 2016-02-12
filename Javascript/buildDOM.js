@@ -12,6 +12,7 @@ function buildDOM (messageBoardArray) {
 		chatString += '</div>';
 	}
 	innerDiv.innerHTML = chatString;
+
 };
 
 
