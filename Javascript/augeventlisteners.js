@@ -9,18 +9,26 @@ var Chatty = (function (newChatty) {
 			Chatty.userInputToDOM();
 			}
 		});
-		document.getElementById("darkTheme").addEventListener("click", function(event) {
-			document.body.classList.toggle("darkTheme");
-		});
-		document.getElementById("largeText").addEventListener("click", function(event) {
-			document.body.classList.toggle("largeText");
-		});
 		document.getElementById("clearButton").addEventListener("click", function(event) {
 			var myContainer = document.getElementById("inner-container");
 			while (myContainer.firstChild) {
 				myContainer.removeChild(myContainer.firstChild);
 			}
 		});
+		document.getElementById("darkTheme").addEventListener("click", function(event) {
+			document.body.classList.toggle("darkTheme");
+		});
+		document.getElementById("largeText").addEventListener("click", function(event) {
+			document.body.classList.toggle("largeText");
+		});
+		document.getElementById("inner-container").addEventListener("click", function(event){
+			console.log("click", event.target);
+			console.log(event.target.className.indexOf("deleteBtn"));
+			if (event.target.className.indexOf("deleteBtn") >= 0) {
+				event.target.parentNode.parentNode.parentNode.removeChild(event.target.parentNode.parentNode);
+			}
+		});
+
 
 
 
