@@ -6,8 +6,8 @@ function buildDOM (mbArray) {
 	for (var i = 0; i < mbArray.length; i++) { 
 		chatString += '<div class="row">';
 			chatString += `<div class="col-md-8">${mbArray[i].user}: ${mbArray[i].text}</div>`;
-			chatString += '<div class="col-md-2"><button type="button" class="btn btn-info">Edit</button></div>';
-			chatString += '<div class="col-md-2"><button type="button" class="btn btn-danger">Delete</button></div>';
+			chatString += '<div class="col-md-2"><button type="button" class="btn btn-info editBtn">Edit</button></div>';
+			chatString += '<div class="col-md-2"><button type="button" class="btn btn-danger deleteBtn">Delete</button></div>';
 		chatString += '</div>';
 	}
 	innerDiv.innerHTML = chatString;
