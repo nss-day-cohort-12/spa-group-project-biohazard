@@ -29,5 +29,12 @@ h2 {
 	margin-left: 5%;
 }
 
+.darkTheme {
+	background-color: gray;
+}
 
-
+.largeText {
+	background-color: orange;
+	font-weight: bold;
+	font-size: 2em;
+}

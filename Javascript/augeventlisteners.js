@@ -9,6 +9,21 @@ var Chatty = (function (newChatty) {
 			Chatty.userInputToDOM();
 			}
 		});
+		document.getElementById("darkTheme").addEventListener("click", function(event) {
+			document.body.classList.toggle("darkTheme");
+		});
+		document.getElementById("largeText").addEventListener("click", function(event) {
+			document.body.classList.toggle("largeText");
+		});
+		document.getElementById("clearButton").addEventListener("click", function(event) {
+			var myContainer = document.getElementById("inner-container");
+			while (myContainer.firstChild) {
+				myContainer.removeChild(myContainer.firstChild);
+			}
+		});
+
+
+
 	};
 	return newChatty;
 })(Chatty);
