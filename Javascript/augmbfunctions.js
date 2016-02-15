@@ -17,3 +17,4 @@ var Chatty = (function (newChatty){
 
 })(Chatty);
 
+console.log(Date.prototype.getDay());
