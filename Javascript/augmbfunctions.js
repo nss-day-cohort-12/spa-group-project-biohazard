@@ -4,7 +4,7 @@ var Chatty = (function (newChatty){
 	newChatty.userInputToDOM = function (){
 		var chatString = "";
 		chatString += '<div class="row">';
-			chatString += `<div class="col-md-8">${userInput.value}</div>`;
+			chatString += `<div class="col-md-8">${userInput.value}<input type="text" class="userEditInput hidden"></div>`;
 			chatString += '<div class="col-md-2"><button type="button" class="btn btn-info">Edit</button></div>';
 			chatString += '<div class="col-md-2"><button type="button" class="btn btn-danger">Delete</button></div>';
 		chatString += '</div>';
