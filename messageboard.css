@@ -32,7 +32,8 @@ body {
 }
 
 .darkTheme {
-	background-color: gray;
+	background-color: navy;
+	color: darkorange;
 }
 
 .largeText {
@@ -56,6 +57,7 @@ body {
 #inner-container {
 	width: 90%;
 	border: 1px solid red;
+	border-radius: 15px;
 	margin: 0 auto;
 	height: 600px;
 }
