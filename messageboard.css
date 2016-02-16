@@ -27,8 +27,22 @@ body {
 	margin-bottom: 25px;
 }
 
-#userInput {
+#userInput, #feedback-type {
 	width: 200px;
+	border: 2px solid red;
+	border-radius: 8px;
+	box-shadow: 5px 5px rgba(100, 100, 225, 1);
+}
+
+#feedback-type {
+	margin-right: 10px;
+}
+
+#clearButton {
+	border-radius: 8px;
+	border: 2px solid red;
+	box-shadow: 5px 5px rgba(100, 100, 225, 1);
+	margin-left: 5px;
 }
 
 .darkTheme {
