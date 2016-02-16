@@ -49,13 +49,22 @@ var Chatty = (function (newChatty) {
 				eventGrandParent.getElementsByClassName("userEditInput")[0].classList.toggle("hidden");
 				eventGrandParent.getElementsByClassName("userEditInput")[0].value = editableTextString;
 				eventGrandParent.getElementsByTagName("p")[0].classList.toggle("hidden");
+				eventGrandParent.getElementsByTagName("p")[1].classList.toggle("hidden");
 			}
 		});
 
 		document.getElementById("inner-container").addEventListener("keyup", function(event){
 			if (event.keyCode === 13) {
-				event.target.parentNode.getElementsByTagName("p")[0].innerHTML = event.target.value
-				event.target.parentNode.getElementsByTagName("p")[0].classList.toggle("hidden");
+				var thisTagName = event.target.parentNode.getElementsByTagName("p");
+				var today = new Date();
+				var hour = today.getHours();
+				var min = today.getMinutes();
+				var timeStamp = hour + ":" + min;
+				
+				thisTagName[0].innerHTML = event.target.value;
+				thisTagName[1].innerHTML = timeStamp;
+				thisTagName[0].classList.toggle("hidden");
+				thisTagName[1].classList.toggle("hidden");
 				event.target.classList.toggle("hidden");
 			}
 		});

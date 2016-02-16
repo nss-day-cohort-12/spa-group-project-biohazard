@@ -24,6 +24,3 @@ function buildDOM (mbArray) {
 //Call loadMessages function with buildDOM as the argument//
 Chatty.loadMessage(buildDOM);
 
-//  <div class="col-md-8">.col-md-8</div>
-//  <div class="col-md-4">.col-md-4</div>
-// </div>

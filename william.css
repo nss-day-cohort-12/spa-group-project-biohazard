@@ -1,5 +1,6 @@
 #inner-container {
   padding: 0 15px;
+  overflow-y: auto;
 }
 
 .editBtn, .deleteBtn {
@@ -9,10 +10,6 @@
 
 .themeCheckboxes {
   color: white;
-}
-
-.row {
-  
 }
 
 .row:hover {
@@ -27,4 +24,13 @@ h3 {
 #dropdownThing {
   display: inline-block;
   position: relative;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  padding: 0;
+  margin: 0;
 }
