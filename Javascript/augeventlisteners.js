@@ -4,10 +4,15 @@ var Chatty = (function (newChatty) {
 	var clearBtn = document.getElementById("clearButton");
 
 	newChatty.activateEvents = function(event) {
+
+		var personValue = "chattyBot";
+		document.getElementById("feedback-type").addEventListener("change", function(event){
+			personValue = document.getElementById("feedback-type").value
+		})
 		
 		userInput.addEventListener("keyup", function(event) {
 			if (event.keyCode === 13) {
-			Chatty.userInputToDOM();
+			Chatty.userInputToDOM(personValue);
 			}
 		});
 
