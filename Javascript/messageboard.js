@@ -1,9 +1,10 @@
+//****** BUILD FIRST IIFE ******//
 var Chatty = (function () {
  var messageBoardArray = [];
 
  return {
-   getMessage: function () {
-   },
+
+   //****** GET JSON DATA ******//
    loadMessage: function (callback) {
      var messageBoardLoader = new XMLHttpRequest();
 
