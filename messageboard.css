@@ -2,29 +2,33 @@ body {
 	background-color: white;
 }
 
+/* Navbar logo */
 #navBar {
 	display: inline-block;
 	background-color: blue;
 	width: 100%;
 	border: 1px solid blue;
 	height: 100px;
+	position: relative;
 }
 
-#outer-container {
-	width: 90%;
-	margin: 0 auto;
-	height: 720px;
+#logoName {
+	font-family: 'Slackey', cursive;
+	color: white;
+	display: inline-block;
+  text-shadow: 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red;
 }
 
-#inner-container {
-	width: 90%;
-	border: 1px solid red;
-	margin: 0 auto;
-	height: 600px;
+#logo {	
+	margin: 10px;
+	border: 2px solid red;
+	border-radius: 15px;
+	box-shadow: 5px 5px rgba(100, 100, 225, 1);
+	margin-bottom: 25px;
 }
 
-h2 {
-	margin-left: 5%;
+#userInput {
+	width: 200px;
 }
 
 .darkTheme {
@@ -36,21 +40,31 @@ h2 {
 	font-size: 2em;
 }
 
+.themeCheckboxes {
+	display: inline-block;
+	padding-top: 50px;
+}
+
+/* Outer container */
+#outer-container {
+	width: 90%;
+	margin: 0 auto;
+	height: 720px;
+}
+
+/* Inner container */
+#inner-container {
+	width: 90%;
+	border: 1px solid red;
+	margin: 0 auto;
+	height: 600px;
+}
+
+h2 {
+	margin-left: 5%;
+}
+
 .hidden {
 	display: none;
 }
 
-#logoName {
-	font-family: 'Slackey', cursive;
-	color: white;
-	display: inline-block;
-  text-shadow: 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red;
-}
-
-#logo {
-	display: inline-block;
-	margin: 10px;
-	border: 2px solid red;
-	border-radius: 15px;
-	box-shadow: 5px 5px rgba(100, 100, 225, 1);
-}
