@@ -23,11 +23,4 @@ var Chatty = (function () {
 })();
 
 
-      //*****HERE LIES bildDOM.js*****//
-// function buildDOM (messageBoardArray) {
-//   console.log("here we go!");
-//   console.log("messageBoardArray", messageBoardArray);
-// };
 
-// //Call loadMessages function with buildDOM as the argument//
-// Chatty.loadMessages(buildDOM);

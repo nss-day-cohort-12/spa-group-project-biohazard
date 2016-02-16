@@ -5,6 +5,7 @@
 	<title>Message Board</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 	<link rel="stylesheet" href="messageboard.css">
+	<link rel="stylesheet" href="william.css">
 </head>
 <body>
 
@@ -16,9 +17,19 @@
 		  <button id="clearButton" type="button" class="btn btn-default">Clear Message Board</button>
 		</div>
 		<div class="themeCheckboxes">
-			<input id="darkTheme" type="checkbox" name="theme" value="darkTheme"> Dark Theme
 			<input id="largeText" type="checkbox" name="theme" value="largeText"> Large Text
+			<input id="darkTheme" type="checkbox" name="theme" value="darkTheme"> Dark Theme
 		</div>
+
+		<label id="dropDown" for="feedback-type"></label>
+    <select id="feedback-type" name="type">
+    	<option selected="" disabled="">Who is talking?</option>
+      <option value="William">William</option>
+      <option value="Matt">Matt</option>
+      <option value="Brian">Brian</option>
+      <option value="Blair">Blair</option>
+    </select>
+
 	</div>
 
 
