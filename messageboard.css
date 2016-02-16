@@ -41,3 +41,18 @@ h2 {
 .hidden {
 	display: none;
 }
+
+#logoName {
+	font-family: 'Slackey', cursive;
+	color: white;
+	display: inline-block;
+  text-shadow: 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red, 0 0 4px red;
+}
+
+#logo {
+	display: inline-block;
+	margin: 10px;
+	border: 2px solid red;
+	border-radius: 15px;
+	box-shadow: 5px 5px rgba(100, 100, 225, 1);
+}
