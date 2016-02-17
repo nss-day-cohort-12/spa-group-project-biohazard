@@ -40,7 +40,10 @@ var Chatty = (function (newChatty) {
 			console.log("listen for deleteBtn", event.target.className.indexOf("deleteBtn"));
 			//****** if innerHTML className exists, run the code. if not, it will return -1 ******//
 			if (event.target.className.indexOf("deleteBtn") >= 0) {
-				event.currentTarget.removeChild(event.target.parentNode.parentNode);
+				// console.log($(".album").parents(".song-container").attr("index"));
+				console.log("trial stuff:", $(event.target).parents(".row").remove());
+
+				// event.currentTarget.removeChild(event.target.parentNode.parentNode);
 			}
 		});
 
