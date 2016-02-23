@@ -14,7 +14,10 @@ function buildDOM (mbArray) {
 	//****** Loop through array and add JSON data ******//
 	for (var i = 0; i < mbArray.length; i++) { 
 		chatString += '<div class="row">';
-			chatString += `<div class="col-md-8"><h3>${mbArray[i].user}:</h3><p>${mbArray[i].text}</p> <p>${timeStamp}</p><input type="text" class="userEditInput hidden" autofocus></div>`;
+			chatString += `<div class="col-md-8"><h3>${mbArray[i].user}:</h3>`;
+				chatString += `<div class="allPTags"><p class="pTagEditString">${mbArray[i].text}</p><p>${timeStamp}</p></div>`;
+				chatString += `<input type="text" class="userEditInput hidden" autofocus>`;
+				chatString += `</div>`;
 			chatString += '<div class="col-md-2"><button type="button" class="btn btn-info editBtn">Edit</button></div>';
 			chatString += '<div class="col-md-2"><button type="button" class="btn btn-danger deleteBtn">Delete</button></div>';
 		chatString += '</div>';

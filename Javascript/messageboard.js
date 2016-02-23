@@ -22,6 +22,3 @@ var Chatty = (function () {
  };
 
 })();
-
-
-
